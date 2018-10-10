@@ -20,14 +20,15 @@ endif(APPLE)
 
 
 # -- config output directories
-set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-set (LIBRARY_OUTPUT_PATH    ${PROJECT_SOURCE_DIR}/lib)
-set (INCLUDE_OUTPUT_PATH    ${PROJECT_SOURCE_DIR}/include)
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set (LIBRARY_OUTPUT_PATH    ${PROJECT_BINARY_DIR}/lib)
+set (INCLUDE_OUTPUT_PATH    ${PROJECT_BINARY_DIR}/include)
+set (TOOLS_DIR              ${PROJECT_BINARY_DIR}/tools)
 
 # -- config source directories
 set (SOURCE_DIR             ${PROJECT_SOURCE_DIR}/src)
 set (THIRDPARTY_DIR         ${PROJECT_SOURCE_DIR}/thirdparty)
-set (TOOLS_DIR              ${PROJECT_SOURCE_DIR}/tools)
+
 
 # -- config resource directories
 set (CONFIGURE_DIR          ${PROJECT_SOURCE_DIR}/conf)
